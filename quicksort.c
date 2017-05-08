@@ -11,7 +11,7 @@ int partition(int a[],int low,int high)
 	int pivot=a[high];
 	int j, i=low-1;
 	for(j=low;j<high;j++)
-		if(a[j]<=pivot)
+		if(a[j]>=pivot)
 		{
 			i++;
 			swap(&a[i],&a[j]);
